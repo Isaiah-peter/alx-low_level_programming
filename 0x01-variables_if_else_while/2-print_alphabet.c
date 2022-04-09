@@ -1,4 +1,7 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 /**
  * main - entry
  *
@@ -6,10 +9,10 @@
  */
 int main(void)
 {
-char ch;
-for(ch = "a"; ch <= "z"; ch++)
+char *ch;
+for(ch = "A"; ch <= "Z"; ch++)
 {
-putchar(ch);
+putchar(tolower(ch));
 }
-return (0)
+return (0);
 }
