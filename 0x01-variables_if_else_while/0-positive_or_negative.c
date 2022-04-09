@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
- * main entry point
+ * main - entry point
  *
  * Return: 0 after running the function
  */
@@ -17,7 +17,7 @@ if (n > 0)
 {
   printf("%d is positive\n", n);	
 }
-else if (n == 0) \
+else if (n == 0)
 {
   printf("%d is zero\n", n);	
 }
