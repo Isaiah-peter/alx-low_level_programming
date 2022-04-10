@@ -8,9 +8,11 @@
 int main(void)
 {
 char ch = 'a';
+char chA = '';
 for(ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
-putchar(toupper(ch));
-printf("\n")
+chA += toupper(ch);
+putchar(chA);
+printf("\n");
 return (0);
 }
