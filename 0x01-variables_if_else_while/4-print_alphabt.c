@@ -9,9 +9,9 @@ int main(void)
 char ch = 'a';
 for (ch = 'a'; ch <= 'z'; ch++)
 if (ch == 'e')
-ch = '';
+ch = '""';
 if (ch == 'q')
-ch = '';
+ch = '""';
 putchar(ch);
 return (0);
 }
