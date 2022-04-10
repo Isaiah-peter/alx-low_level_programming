@@ -11,5 +11,7 @@ for (ch = 'a'; ch <= 'z'; ch++)
 if (ch == 'e' || ch == 'q')
 continue;
 putchar(ch);
-return (0);
+printf("\n");
+
+printf("\n");return (0);
 }
