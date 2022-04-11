@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-int i;
+char i;
 for (i = 'z'; i >= 'a'; i--)
-printf("%c", i);
+putchar(i);
 printf("\n");
 return (0);
 }
