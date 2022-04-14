@@ -18,6 +18,10 @@ i = 0;
 *putchar(i);
 *}
 */
+while (i < 10)
+{
+printf("%d", i);
+}
 										  printf("Infinite loop avoided! \\o/\n");
 
 return (0);
