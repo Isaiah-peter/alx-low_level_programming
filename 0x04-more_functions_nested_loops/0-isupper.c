@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * _isupper - prototype function
- * @c pint int
- * Return: 1 or 0
+ * _isupper - check upper case
+ * @c: pint int
+ * Return: give 1 or 0
  */
 int _isupper(int c)
 {
