@@ -1,11 +1,18 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main"
 /**
  * _isupper - prototype function
- * Return: 1 if true
- * Return: 0 if false
+ * @c pint int
+ * Return: 1 or 0
  */
 int _isupper(int c)
 {
-return (isupper(c))
+if (c >= 'A' && c <= 'Z')
+{
+return (1)
+}
+else
+{
+return (0)	
+}
+return (0)
 }
