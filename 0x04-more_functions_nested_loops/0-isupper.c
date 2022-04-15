@@ -1,4 +1,6 @@
-#include "main"
+#include <stdio.h>
+#include <ctype.h>
+
 /**
  * _isupper - prototype function
  * @c pint int
