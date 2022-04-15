@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 
 /**
  * _isupper - prototype function
@@ -12,9 +11,11 @@ if (c >= 'A' && c <= 'Z')
 {
 return (1)
 }
+
 else
 {
 return (0)	
 }
 return (0)
+
 }
