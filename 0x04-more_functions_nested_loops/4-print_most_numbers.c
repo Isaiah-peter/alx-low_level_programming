@@ -2,19 +2,19 @@
 /**
  * print_most_numbers - print int
  *
- * Return: void
+ * Retuen: Always 0 (sucess)
  */
 
 void print_most_numbers(void)
 {
 int i;
-for (i = 0; i <= 9; i++)
+for (i = 0; i < 10; i++)
 {
 if ( i == 2 || i == 4)
 {
 continue;
 }
-printf("%d", i);
+_putchar(i + '0');
 }
-printf("\n");
+_putchar("\n");
 }
