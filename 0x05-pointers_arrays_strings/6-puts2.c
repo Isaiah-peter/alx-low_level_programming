@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * puts2 - print
- * @s: char parameter
+ * @str: char parameter
  * Return: Nothing
  */
 
