@@ -1,4 +1,8 @@
 /**
+ * reverse_array - reverse array
+ * @a: int
+ * @n: int
+ * Result: return int of arr
  */
 void reverse_array(int *a, int n)
 {
