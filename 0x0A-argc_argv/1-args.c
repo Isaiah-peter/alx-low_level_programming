@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *main - entry point
  *@argc: int parameter
@@ -8,6 +9,8 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-printf("%d\n", argc);
+int i;
+i = argc - 1;
+printf("%d\n", i);
 return (0);
 }
