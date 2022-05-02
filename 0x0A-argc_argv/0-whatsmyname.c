@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *main - entry point
  *@argc: int parameter
@@ -8,6 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-printf("%s\n", argv[0]);
+_putchar(argv[0]);
+_putchar('\n');
 return (0);
 }
