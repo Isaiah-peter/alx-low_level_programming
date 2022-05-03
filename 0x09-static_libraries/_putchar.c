@@ -1,1 +1,6 @@
-int _putchar(char c);
+#include <stdio.h>
+
+int _putchar(char c)
+{
+printf("%c", c);
+}
