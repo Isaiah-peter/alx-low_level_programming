@@ -5,19 +5,25 @@
  *   * @s1: char parameter
  *    * @s2: char param
  *     * Return: char character
- *      */
+ */
 
 char *str_concat(char *s1, char *s2)
 {
 int i;
 int len;
 char *s;
-if (s1 == NULL && s2 == NULL)
+char *str;
+if(s2 == NULL)
 {
-return (NULL);
+s2 = "";
 }
-strcat(s1, s2);
-len = strlen(s1);
+if(s1 == NULL)
+{
+s1 = "";
+}
+strcpy(str, s1);
+strcat(str, s2);
+len = strlen(str);
 s = malloc(len *sizeof(char));
 if (s == NULL)
 {
@@ -25,7 +31,7 @@ return (NULL);
 }
 for (i = 0; i < len; i++)
 {
-s[i] = s1[i];
+s[i] = str[i];
 }
 return (s);
 }
