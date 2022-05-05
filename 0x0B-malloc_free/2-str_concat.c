@@ -13,11 +13,11 @@ int i;
 int len;
 char *s;
 char str[80];
-if(s2 == NULL)
+if (s2 == NULL)
 {
 s2 = "";
 }
-if(s1 == NULL)
+if (s1 == NULL)
 {
 s1 = "";
 }
