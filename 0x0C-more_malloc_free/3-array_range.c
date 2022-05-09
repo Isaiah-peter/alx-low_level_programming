@@ -1,26 +1,27 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-
 /**
- *  * *_calloc - entry point;
- *   * @min: char params
- *    * @max: char params
- *     * Return: void or memory or 98
+ * array_range -a function that creates an array of integers
+ * @min: lower end of values
+ * @max: upper end
+ * Return: int *
  */
-
 int *array_range(int min, int max)
-{  
-int *s;
-if (min > max)
 {
-return (NULL);
-}
+	int *s;
+	int i;
 
-s = malloc(min + max);
-if (s == NULL)
-{
-return (NULL);
-}
-return (s);
+	if (min > max)
+		return (NULL);
+	s = malloc(sizeof(int) * (max - min + 1));
+	if (s == NULL)
+		return (NULL);
+	for (i = 0; min <= max; i++)
+	{
+		s[i] = min;
+		min++;
+	}
+	return (s);
+
 }
