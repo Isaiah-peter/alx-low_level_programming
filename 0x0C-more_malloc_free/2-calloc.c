@@ -3,10 +3,10 @@
 #include <string.h>
 
 /**
- *  * *_calloc - entry point;
- *   * @nmemb: char params
- *    * @size: char params
- *     * Return: void or memory or 98
+ * *_calloc - entry point;
+ * @nmemb: char params
+ * @size: char params
+ * Return: void or memory or 98
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -20,7 +20,7 @@ if (nmemb == 0)
 {
 return (NULL);
 }
-s = malloc(size + nmemb);
+s = calloc(nmemb, size);
 if (s == NULL)
 {
 return (NULL);

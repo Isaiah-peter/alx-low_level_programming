@@ -3,17 +3,17 @@
 #include <string.h>
 
 /**
- *  * *string_nconcat - entry point;
- *   * @s1: char params
- *    * @s2: char params
- *     * @n: unsigned int
- *      * Return: void or memory or 98
+ * *string_nconcat - entry point
+ *@s1: char params
+ *@s2: char params
+ *@n: unsigned int
+ *Return: void or memory or 98
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-s = malloc(sizeof(s1) + n);
+s = malloc(n + sizeof(s1));
 if (s == NULL)
 {
 return (NULL);
