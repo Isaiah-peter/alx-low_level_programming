@@ -18,10 +18,10 @@ return (NULL);
 }
 /* malloc the space & check for fail */
 p = malloc(nmemb * size);
-{
 if (p == NULL)
-}
+{
 return (NULL);
+}
 /* calloc */
 for (n = 0; n < nmemb; n++)
 {
@@ -39,7 +39,7 @@ return (p);
   * @len2: len num2
   * Return: void
   */
-void mul(int *product, char *n1, char *n2, int len1, int len2)
+void mult(int *product, char *n1, char *n2, int len1, int len2)
 {
 /* declarations */
 int i;
@@ -66,9 +66,7 @@ product[i + j + 1] += sum;
 for (i = 0; product[i] == 0 && i < len1 + len2; i++)
 {
 if (i == len1 + len2)
-{
 _putchar('0');
-}
 }
 for (; i < len1 + len2; i++)
 {
@@ -157,4 +155,3 @@ err(98);
 mult(res, argv[1], argv[2], len1, len2);
 free(res);
 return (0);
-}
