@@ -23,7 +23,7 @@ free(ptr);
 return (NULL);
 }
 }
-s = malloc(sizeof(char) * new_size);
+s = malloc(sizeof(char) *new_size);
 if (s == NULL)
 {
 return (NULL);
@@ -32,7 +32,7 @@ if (ptr)
 {
 for (i = 0; i < old_size; i++)
 {
-s[i] = *((char *)ptr + i);
+s[i] = *((char *) ptr + i);
 }
 }
 free(ptr);
