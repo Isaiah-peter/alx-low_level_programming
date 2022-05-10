@@ -155,3 +155,4 @@ err(98);
 mult(res, argv[1], argv[2], len1, len2);
 free(res);
 return (0);
+}
