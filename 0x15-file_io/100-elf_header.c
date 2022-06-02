@@ -35,10 +35,10 @@ switch (buffer[6])
 			printf("NONE (None)");
 			break;
 		case ET_REL:
-			printf("EXCE (Relocatable file)");
+			printf("EXEC (Relocatable file)");
 			break;
 		case ET_EXEC:
-			printf("EXCE (Executable file)");
+			printf("EXEC (Executable file)");
 			break;
 		case ET_DYN:
 			printf("DYN (Shared object file)");
