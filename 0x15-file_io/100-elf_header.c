@@ -38,7 +38,7 @@ switch (buffer[6])
 			printf("REL (Relocatable file)");
 			break;
 		case ET_EXEC:
-			printf("EXEC (Executable file)");
+			printf("REL (Executable file)");
 			break;
 		case ET_DYN:
 			printf("DYN (Shared object file)");
