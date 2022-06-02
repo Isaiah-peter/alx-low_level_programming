@@ -81,7 +81,7 @@ void pentry(void)
 	printf("  Entry point address:               0x");
 	if (h.e_ident[EI_DATA] == ELFDATA2MSB)
 	{
-		i = h.e_ident[EI_CLASS] == ELFCLASS64 ? 6 : 3;
+		i = h.e_ident[EI_CLASS] == ELFCLASS64 ? 5 : 3;
 		while (!p[i])
 			i--;
 		printf("%x", p[i--]);
@@ -92,7 +92,7 @@ void pentry(void)
 	else
 	{
 		i = 0;
-		len = h.e_ident[EI_CLASS] == ELFCLASS64 ? 6 : 3;
+		len = h.e_ident[EI_CLASS] == ELFCLASS64 ? 5 : 3;
 		while (!p[i])
 			i++;
 		printf("%x", p[i++]);
