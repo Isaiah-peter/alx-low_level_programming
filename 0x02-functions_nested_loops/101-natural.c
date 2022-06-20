@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 /**
   * main - finds and prints multiples of 3 or 5 under 1024
   *
