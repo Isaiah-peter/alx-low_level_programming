@@ -7,7 +7,6 @@
   */
 void print_alphabet_x10(void)
 {
-int counter;
 int x;
 
 	while (x < 10)
