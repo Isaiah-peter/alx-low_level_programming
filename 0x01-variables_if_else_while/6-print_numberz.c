@@ -1,14 +1,17 @@
 #include <stdio.h>
 /**
- * main - enter point
- *
- * Return: 0 after program run
- */
+  *main- Entry point
+  *
+  *Return: Always 0 (Success)
+  */
 int main(void)
 {
-char ch = '0';
-for (ch = '0';ch <= '9'; ch++)
-putchar(ch);
-printf("\n");
-return (0);
+	int x;
+
+	for (x = 48; x < 58; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
+	return (0);
 }
