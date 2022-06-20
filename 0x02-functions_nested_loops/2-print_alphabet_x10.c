@@ -11,7 +11,7 @@ int x;
 
 	while (x < 10)
 	{
-	print_alphabet()
+	print_alphabet();
 	_putchar('\n');
 	x++;
 	}
