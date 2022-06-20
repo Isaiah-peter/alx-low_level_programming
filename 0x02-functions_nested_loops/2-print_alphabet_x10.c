@@ -13,7 +13,11 @@ int x;
 
 	while (x < 10)
 	{
-	_putchar('abcdefghijklmnopqrstuvwxyz');
+		for (counter = 0; counter < 26; counter++)
+
+		{
+			_putchar(alphabet[counter]);
+		}
 	_putchar('\n');
 	x++;
 	}
