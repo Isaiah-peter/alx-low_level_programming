@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 /**
   * main- prints certain words if numbers are multiples of 3 & or 5
