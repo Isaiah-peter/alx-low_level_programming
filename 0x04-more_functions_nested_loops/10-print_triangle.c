@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
   * print_triangle - draws a diagonal line
   * @size: that's the length of the triangle
