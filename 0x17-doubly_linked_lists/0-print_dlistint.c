@@ -7,10 +7,15 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	size_t count = 0;
+	/* declarations */
+	size_t nodes = 0;
+
+/* walk through list and print */
 	while (h)
 	{
-		count++;
+		printf("%d\n", h->n);
+		h = h->next;
+		nodes++;
 	}
-	return (count);
+	return (nodes);
 }
