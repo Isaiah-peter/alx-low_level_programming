@@ -1,4 +1,3 @@
-#include "main.h"
 /**
   * string_toupper - function to capitalize letters in string
   * @s: that's the string
