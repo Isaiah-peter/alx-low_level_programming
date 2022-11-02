@@ -16,6 +16,9 @@ int binary_search(int *array, size_t size, int value)
 	int center = 0;
 	size_t i;
 
+	if (array == NULL)
+		return (-1);
+
 	while (left <= right)
 	{
 		center = ceil((right + left) / 2);
