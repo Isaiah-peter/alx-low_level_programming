@@ -2,6 +2,7 @@
 #include <math.h>
 /**
  * jump_search - search algorithm
+ * @array: the array to search
  * @size: the number of elements in the array
  * @value: the number to search
  * Return: the index of the number
@@ -27,7 +28,7 @@ int jump_search(int *array, size_t size, int value)
 
 	printf("Value found between indexes [%ld] and [%ld]\n", start, end);
 
-	for(i = start; i < end; i++)
+	for (i = start; i < end; i++)
 	{
 		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 		if (array[i] == value)
