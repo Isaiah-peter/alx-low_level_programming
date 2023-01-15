@@ -1,60 +1,46 @@
 #include "main.h"
 /**
-  * infinite_add - add two numbers
-  * @n1: first number
-  * @n2: second number
-  * @r: the buffer
-  * @size_r: the size of r
-  * Return: char
-  */
+  * infinite_add - adds two numbers
+  * @n1: number1
+  * @n2: number2
+  * @r: result
+  * @size_r: size result
+  * Return: r addition
+**/
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
+	int i = 0, j = 0, a, b, c, n, aux, dec = 0;
 
-	int i = 0;
-	int j = 0;
-	int count = 0;
-	int digit = 0;
-	unsigned int digitval;
-	unsigned int value1 = 0;
-	unsigned int value2 = 0;
-	unsigned int value3 = 0;
-	char *p = r;
-
-	while (n1[i + 1])
+	while (n1[i] != '\0')
 	{
-		n1++;
-		i++;
+	i++;
 	}
-	while (i)
+	while (n2[j] != '\0')
 	{
-		value1 += n1[i] - '0';
-		i--;
+	j++;
 	}
-	while (n2[j + 1])
+	for (n = 0; n < j || n < i; n++)
 	{
-		n2++;
-		j++;
+	a = (i - n) > 0 ? (n1[i - n - 1] - '0') : 0;
+	b = (j - n) > 0 ? (n2[j - n - 1] - '0') : 0;
+	c = a + b + dec;
+	r[n] = (c % 10) + '0';
+	dec = c > 9 ? 1 : 0;
 	}
-	while (j)
+	if (dec == 1)
+	{ r[n] = '1';
+	r[n + 1] = '\0'; }
+	else
+	{ r[n] = '\0';
+	n--; }
+	for (i = 0; i < n + 1; i++)
 	{
-		value2 += n2[j - '0'];
-		j--;
-	}
-	value3 = value1 + value2;
-	digitval = value3;
-	while (digitval / 10)
+	for (j = 0; j < (n - i); j++)
 	{
-		count += 1;
-		digitval /= 10;
+	aux = r[j + 1];
+	r[j + 1] = r[j];
+	r[j] = aux;
 	}
-	count += 1;
-	if (count > size_r)
-		return (0);
-	for (; count; count--)
-	{
-		digit = (value3 % 10);
-		value3 = (value3 - digit);
-		r[count] = digit + '0';
 	}
-	return (p);
+return (n < size_r - 1 ? r : 0);
 }
