@@ -3,7 +3,7 @@
  * _strspn - count letter
  * @s: char parameter
  * @accept: char parameter
- * Result: unsigned int
+ * Return: unsigned int
  */
 
 unsigned int _strspn(char *s, char *accept)
