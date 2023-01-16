@@ -15,15 +15,24 @@ int _strlen(const char *s)
 	return (i);
 }
 /**
- * *add_node - adds new nodes to list
+ * add_node_end - adds new nodes to the end of the list
  * @head: address new head
  * @str: string to add
  * Return: head
  */
-list_t *add_node(list_t **head, const char *str)
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node;
+	list_t *aux;
 
+	aux = *head;
+	if (*head)
+	{
+		while (aux->next)
+		{
+		aux = aux->next;
+		}
+	}
 	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
@@ -38,7 +47,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (0);
 	}
 	new_node->len = _strlen(str);
-	new_node->next = *head;
+	new_node->next = NULL;
+	if (aux)
+	aux->next = new_node;
+	else
 	*head = new_node;
-	return (*head);
+	return (new_node);
 }
