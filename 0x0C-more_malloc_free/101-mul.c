@@ -2,32 +2,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * int_calloc - special calloc but 4 int arrays
-  * @nmemb: n memb
-  * @size: size of array
-  * Return: int *
-  */
-int *int_calloc(int nmemb, unsigned int size)
+* main - multiply 2 numbers as arguments
+* @argc: number of arguments
+* @argv: arguments
+* Return: 0 success
+*/
+int main(int argc, char *argv[])
 {
-/* declarations */
-int *p, n;
-/* checking inputs */
-if (nmemb == 0 || size == 0)
-{
-return (NULL);
-}
-/* malloc the space & check for fail */
-p = malloc(nmemb * size);
-if (p == NULL)
-{
-return (NULL);
-}
-/* calloc */
-for (n = 0; n < nmemb; n++)
-{
-p[n] = 0;
-}
-return (p);
+unsigned long mul;
+int i, j;
+	if (argc != 3)
+	{ printf("Error\n");
+	exit(98); }
+	for (i = 1; i < argc; i++)
+	{
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (argv[i][j] > 57 || argv[i][j] < 48)
+			{  printf("Error\n");
+			exit(98); }
+		}
+
+	}
+	mul = atol(argv[1]) *  atol(argv[2]);
+	printf("%lu\n", mul);
+return (0);
 }
 
 /**
