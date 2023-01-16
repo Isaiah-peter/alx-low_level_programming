@@ -114,44 +114,44 @@ exit(status);
   * @argv: arg array
   * Return: 0
   */
-int main(int argc, char **argv)
-{
-/* declarations */
-int i, j, len1 = 0, len2 = 0;
-int *res;
-/* too many args? too few? */
-if (argc != 3)
-{
-err(98);
-}
-/* using isvalid */
-for (i = 1; i < argc; i++)
-{
-if (!(is_valid(argv[i])))
-{
-err(98);
-}
-if (i == 1)
-{
-for (j = 0; argv[i][j]; j++)
-{
-len1++;
-}
-}
-if (i == 2)
-{
-for (j = 0; argv[i][j]; j++)
-{
-len2++;
-}
-}
-}
-res = int_calloc(len1 + len2, sizeof(int));
-if (res == NULL)
-{
-err(98);
-}
-mult(res, argv[1], argv[2], len1, len2);
-free(res);
-return (0);
-}
+// int main(int argc, char **argv)
+// {
+// /* declarations */
+// int i, j, len1 = 0, len2 = 0;
+// int *res;
+// /* too many args? too few? */
+// if (argc != 3)
+// {
+// err(98);
+// }
+// /* using isvalid */
+// for (i = 1; i < argc; i++)
+// {
+// if (!(is_valid(argv[i])))
+// {
+// err(98);
+// }
+// if (i == 1)
+// {
+// for (j = 0; argv[i][j]; j++)
+// {
+// len1++;
+// }
+// }
+// if (i == 2)
+// {
+// for (j = 0; argv[i][j]; j++)
+// {
+// len2++;
+// }
+// }
+// }
+// res = int_calloc(len1 + len2, sizeof(int));
+// if (res == NULL)
+// {
+// err(98);
+// }
+// mult(res, argv[1], argv[2], len1, len2);
+// free(res);
+// return (0);
+// }
